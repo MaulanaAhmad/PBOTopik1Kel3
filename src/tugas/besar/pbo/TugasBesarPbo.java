@@ -18,8 +18,8 @@ public class TugasBesarPbo {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Tampildata tampl = new Tampildata();
-        tampl.setVisible(true);
+        Tampildata tampil = new Tampildata();
+        tampil.setVisible(true);
     }
     
 }
