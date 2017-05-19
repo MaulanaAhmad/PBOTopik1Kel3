@@ -103,7 +103,7 @@ DefaultTableModel dm;
 
         jTabbedPane1.setBackground(new java.awt.Color(255, 255, 153));
 
-        jPanel3.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel3.setBackground(new java.awt.Color(51, 255, 102));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Nama");
@@ -153,7 +153,8 @@ DefaultTableModel dm;
         txtStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Belum Kawin", "Kawin", "Bercerai" }));
 
         jLabel14.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel14.setText("Isi Data");
+        jLabel14.setText("Form Warga e - KTP");
+        jLabel14.setToolTipText("");
 
         jButton1.setText("Simpan");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -172,7 +173,7 @@ DefaultTableModel dm;
 
         rt1.setText("Rt. 01");
 
-        rt2.setText("Rt. 01");
+        rt2.setText("Rt. 02");
 
         rt3.setText("Rt. 03");
 
@@ -229,7 +230,7 @@ DefaultTableModel dm;
                         .addComponent(txtKecamatan, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(txtPekerjaan, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(txtKewarganegaraan, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(364, Short.MAX_VALUE))
+                .addContainerGap(370, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton1)
@@ -303,7 +304,7 @@ DefaultTableModel dm;
 
         jTabbedPane1.addTab("Input Data", jPanel3);
 
-        jPanel1.setBackground(new java.awt.Color(0, 204, 204));
+        jPanel1.setBackground(new java.awt.Color(51, 255, 102));
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -329,9 +330,9 @@ DefaultTableModel dm;
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel1.setText("Kelurahan");
 
-        sortBjt.setText("Bojong Timur");
+        sortBjt.setText("Kelurahan Satu");
 
-        sortBjb.setText("Bojong Barat");
+        sortBjb.setText("Kelurahan Dua");
 
         sortRt1.setText("Rt. 1");
 
@@ -350,7 +351,7 @@ DefaultTableModel dm;
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 917, Short.MAX_VALUE)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 923, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(28, 28, 28)
@@ -439,44 +440,44 @@ DefaultTableModel dm;
       data.setKewarganegaraan(txtKewarganegaraan.getText());
       if(KelurahanSatu.isSelected()){
           if(rt1.isSelected()){
-              data.setDesa("Bojong Timur");
+              data.setDesa("Kelurahan Satu");
               data.setRt("1");
           RT1kel1.add(data);
           }
           if(rt2.isSelected()){
-              data.setDesa("Bojong Timur");
+              data.setDesa("Kelurahan Satu");
               data.setRt("2");
           RT2kel1.add(data);
           }
           if(rt3.isSelected()){
-              data.setDesa("Bojong Timur");
+              data.setDesa("Kelurahan Satu");
               data.setRt("3");
           RT3kel1.add(data);
           }
           if(rt4.isSelected()){
-              data.setDesa("Bojong Timur");
+              data.setDesa("Kelurahan Satu");
               data.setRt("4");
           RT4kel1.add(data);
           }
       }
       if(KelurahanDua.isSelected()){
           if(rt1.isSelected()){
-              data.setDesa("Bojong barat");
+              data.setDesa("Kelurahan Dua");
               data.setRt("1");
           RT1kel2.add(data);
           }
           if(rt2.isSelected()){
-              data.setDesa("Bojong Barat");
+              data.setDesa("Kelurahan Dua");
               data.setRt("2");
           RT2kel2.add(data);
           }
           if(rt3.isSelected()){
-              data.setDesa("Bojong Barat");
+              data.setDesa("Kelurahan Dua");
               data.setRt("3");
           RT3kel2.add(data);
           }
           if(rt4.isSelected()){
-              data.setDesa("Bojong Barat");
+              data.setDesa("Kelurahan Dua");
               data.setRt("4");
           RT4kel2.add(data);
           }
@@ -490,19 +491,19 @@ DefaultTableModel dm;
       if(sortBjt.isSelected()){
             if(sortRt1.isSelected()){
             for (data isi :RT1kel1){
-            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            datakolom(isi.getNama(), isi.getNIK(),isi.getTTL(), isi.getAlamat(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(), isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
             }
             if(sortRt2.isSelected()){
             for (data isi :RT2kel1){
-            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            datakolom(isi.getNama(), isi.getNIK(),isi.getTTL(), isi.getAlamat(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(), isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
             }
             if(sortRt3.isSelected()){
             for (data isi :RT3kel1){
-            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            datakolom(isi.getNama(), isi.getNIK(),isi.getTTL(), isi.getAlamat(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(), isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
             }
             if(sortRt4.isSelected()){
             for (data isi :RT4kel1){
-            datakolom(isi.getNama(), isi.getNIK(),isi.getAlamat(), isi.getTTL(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(),isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
+            datakolom(isi.getNama(), isi.getNIK(),isi.getTTL(), isi.getAlamat(), isi.getJkl(), isi.getRt(), isi.getDesa(), isi.getKecamatan(), isi.getAgama(),isi.getStatus(),isi.getPekerjaan(), isi.getKewarganegaraan());
             }
             }
             }  

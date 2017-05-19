@@ -49,7 +49,7 @@
         <Container class="javax.swing.JPanel" name="jPanel3">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="cc" red="0" type="rgb"/>
+              <Color blue="66" green="ff" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -119,7 +119,7 @@
                               <Component id="txtKewarganegaraan" alignment="0" min="-2" pref="187" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="364" max="32767" attributes="0"/>
+                      <EmptySpace pref="370" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace max="32767" attributes="0"/>
@@ -367,7 +367,8 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Tahoma" size="24" style="1"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Isi Data"/>
+                <Property name="text" type="java.lang.String" value="Form Warga e - KTP"/>
+                <Property name="toolTipText" type="java.lang.String" value=""/>
               </Properties>
             </Component>
             <Component class="javax.swing.JButton" name="jButton1">
@@ -412,7 +413,7 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="rt2">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Rt. 01"/>
+                <Property name="text" type="java.lang.String" value="Rt. 02"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="rt3">
@@ -430,7 +431,7 @@
         <Container class="javax.swing.JPanel" name="jPanel1">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="cc" green="cc" red="0" type="rgb"/>
+              <Color blue="66" green="ff" red="33" type="rgb"/>
             </Property>
           </Properties>
           <Constraints>
@@ -446,7 +447,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jScrollPane2" pref="917" max="32767" attributes="0"/>
+                      <Component id="jScrollPane2" pref="923" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -560,12 +561,12 @@
             </Component>
             <Component class="javax.swing.JRadioButton" name="sortBjt">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Bojong Timur"/>
+                <Property name="text" type="java.lang.String" value="Kelurahan Satu"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="sortBjb">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Bojong Barat"/>
+                <Property name="text" type="java.lang.String" value="Kelurahan Dua"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JRadioButton" name="sortRt1">
